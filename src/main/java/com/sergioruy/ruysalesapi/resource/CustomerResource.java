@@ -17,7 +17,7 @@ public class CustomerResource {
     private final CustomerRepo customerRepo;
 
     @GetMapping
-    public List<Customer> customerList() {
+    public List<Customer> list() {
         return customerRepo.findAll();
     }
 }

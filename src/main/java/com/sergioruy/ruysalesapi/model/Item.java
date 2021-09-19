@@ -19,6 +19,7 @@ public class Item {
     private Sale sale;
 
     @NotNull
+    @ManyToOne
     private Product product;
 
     @NotNull

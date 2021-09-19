@@ -28,7 +28,7 @@ public class SaleService {
                 .map(i -> i.getProduct().getValue().multiply(new BigDecimal(i.getQuantity())))
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        sale.setTotal(totalItems.add(sale.getTaxDelivery()));
+        sale.setTotal(totalItems.add(sale.getDelivery()));
 
         return salesRepo.save(sale);
     }

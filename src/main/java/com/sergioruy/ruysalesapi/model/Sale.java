@@ -33,7 +33,7 @@ public class Sale {
     List<Item> items;
 
     @NotNull
-    private BigDecimal taxDelivery;
+    private BigDecimal delivery;
 
     private BigDecimal total;
 }
